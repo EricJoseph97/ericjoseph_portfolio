@@ -9,23 +9,73 @@
 
 
 .header {
-  width: 900px;
+  display: flex;
+  vertical-align: middle;
+  max-width: 900px;
   margin: auto;
+
   text-align: center;
   font-size: 3em;
   font-weight: 200;
 }
 
+.icon-list{
+  height: 100%;
+  margin: auto;
+  vertical-align: middle;
+  position: relative;
+}
+
+.icon {
+  padding: 5px;
+}
+
+#Email {
+  vertical-align: middle;
+  font-size: 16px;
+  border: none;
+}
+
+.email-copied {
+  color: #184918;
+  display: none;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
 .container {
   display: flex;
+  justify-content: center;
   flex: 1;
+  
   margin: auto;
   padding: auto;
-  align-self: center;
-  align-content: center;
+
 }
 
 .box {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  max-width: 900px;
+  min-width: 400px;
   border: 1px solid var(--main-text-color);
   border-radius: 5px;
+}
+
+.doc-frame {
+  height: 700px;
+  flex: 1;
+  margin: auto;
+  object-fit: scale-down;
+}
+
+@media print {
+  .doc-frame {
+    position: absolute;
+    height: auto;
+    width: 100vh;
+  }
 }
