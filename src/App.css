@@ -3,10 +3,8 @@
   --text-color-success: rgb(64, 158, 35);
   color: var(--main-text-color);
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 }
-
 
 .header {
   display: flex;
@@ -19,7 +17,7 @@
   font-weight: 200;
 }
 
-.icon-list{
+.icon-list {
   height: 100%;
   margin: auto;
   vertical-align: middle;
@@ -39,7 +37,7 @@
 .email-copied {
   position: absolute;
   right: -30px;
-  top : 35%;
+  top: 35%;
   color: white;
   background-color: var(--text-color-success);
   border-radius: 5px;
@@ -49,9 +47,10 @@
 }
 
 .email-copied::before {
-  content: '';
+  content: "";
   border: 5px solid;
-  border-color: var(--text-color-success) var(--text-color-success) transparent transparent;
+  border-color: var(--text-color-success) var(--text-color-success) transparent
+    transparent;
   border-radius: 0px;
   transform: rotate(-135deg);
   position: absolute;
@@ -68,10 +67,10 @@
     transform: scale(1);
     opacity: 1;
   }
-  50%{
+  50% {
     transform: scale(0.8);
   }
-  75%{
+  75% {
     transform: scale(1);
     opacity: 1;
   }
@@ -85,10 +84,9 @@
   display: flex;
   justify-content: center;
   flex: 1;
-  
+
   margin: auto;
   padding: auto;
-
 }
 
 .box {
