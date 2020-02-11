@@ -1,6 +1,6 @@
 * {
   --main-text-color: rgb(75, 75, 75);
-
+  --text-color-success: rgb(64, 158, 35);
   color: var(--main-text-color);
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -37,10 +37,48 @@
 }
 
 .email-copied {
-  color: #184918;
-  display: none;
-  vertical-align: middle;
+  position: absolute;
+  right: -30px;
+  top : 35%;
+  color: white;
+  background-color: var(--text-color-success);
+  border-radius: 5px;
+  padding: 5px;
   font-size: 16px;
+  animation: bounceInOut 3s;
+}
+
+.email-copied::before {
+  content: '';
+  border: 5px solid;
+  border-color: var(--text-color-success) var(--text-color-success) transparent transparent;
+  border-radius: 0px;
+  transform: rotate(-135deg);
+  position: absolute;
+  top: 10px;
+  left: -5px;
+}
+
+@keyframes bounceInOut {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50%{
+    transform: scale(0.8);
+  }
+  75%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
 }
 
 .container {
