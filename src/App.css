@@ -1,7 +1,9 @@
 * {
   --main-text-color: rgb(75, 75, 75);
+  --light-text-color:  rgb(125, 125, 125);
+  --extra-light-text-color:  rgb(175, 175, 175);
   --text-color-success: rgb(64, 158, 35);
-  color: var(--main-text-color);
+
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
@@ -11,7 +13,7 @@
   vertical-align: middle;
   max-width: 900px;
   margin: auto;
-
+  color: var(--main-text-color);
   text-align: center;
   font-size: 3em;
   font-weight: 200;
@@ -26,12 +28,45 @@
 
 .icon {
   padding: 5px;
+  cursor: pointer;
+}
+
+.dark-icon {
+  fill: var(--main-text-color);
+  color: var(--main-text-color);
+}
+
+.light-icon {
+  fill: white;
+  color: white;
+}
+
+.dark-icon:hover {
+  fill: var(--light-text-color);
+}
+
+.light-icon:hover {
+  fill: var(--extra-light-text-color);
+}
+
+.absolute {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 30px;
+}
+
+.bg-dark {
+  border: 2px solid var(--main-text-color);
+  background-color: var(--light-text-color);
+  border-radius: 5px 0 5px 0;
 }
 
 #Email {
   vertical-align: middle;
   font-size: 16px;
   border: none;
+  cursor: pointer;
 }
 
 .email-copied {
@@ -90,6 +125,8 @@
 }
 
 .box {
+
+  color: var(--main-text-color);
   position: relative;
   width: fit-content;
   display: flex;

@@ -25,7 +25,7 @@ export default function Header() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LinkedIn fontSize="large" />
+          <LinkedIn className='dark-icon' fontSize="large" />
         </a>
         <a
           className="icon"
@@ -33,10 +33,10 @@ export default function Header() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GitHub fontSize="large" />
+          <GitHub className='dark-icon' fontSize="large" />
         </a>
         <span className="icon" onClick={handleMail}>
-          <Mail fontSize="large" />
+          <Mail className='dark-icon' fontSize="large" />
         </span>
         <input
           id="Email"
