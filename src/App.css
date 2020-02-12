@@ -19,6 +19,16 @@
   font-weight: 200;
 }
 
+@media screen and (max-width: 600px) {
+  .header {
+    flex-flow: column;
+  }
+
+  .doc-frame {
+    object-fit: scale-down;
+  }
+}
+
 .icon-list {
   height: 100%;
   margin: auto;
@@ -128,7 +138,6 @@
 
   color: var(--main-text-color);
   position: relative;
-  width: fit-content;
   display: flex;
   flex: 1;
   justify-content: center;
@@ -142,7 +151,7 @@
   height: 700px;
   flex: 1;
   margin: auto;
-  object-fit: scale-down;
+  object-fit: fill;
 }
 
 @media print {
