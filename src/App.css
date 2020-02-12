@@ -30,6 +30,7 @@
 }
 
 .icon-list {
+  display: flex;
   height: 100%;
   margin: auto;
   vertical-align: middle;
@@ -57,6 +58,10 @@
 
 .light-icon:hover {
   fill: var(--extra-light-text-color);
+}
+
+.realative {
+  position: relative;
 }
 
 .absolute {
@@ -160,4 +165,15 @@
     height: auto;
     width: 100vh;
   }
+}
+
+.popover {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: white;
+  font-size: 1rem;
+  padding: 5px;
+  background-color: var(--main-text-color);
+  border-radius: 5px;
 }

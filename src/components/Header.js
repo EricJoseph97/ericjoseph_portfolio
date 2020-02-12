@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
-import { LinkedIn, GitHub, Mail } from "@material-ui/icons";
+import { LinkedIn, GitHub, Mail, School } from "@material-ui/icons";
+import IconContainer from './IconContainer';
 
 export default function Header() {
   const [copied, setCopied] = useState(false);
@@ -19,22 +20,15 @@ export default function Header() {
     <div className="header">
       <h3>Eric J Pence</h3>
       <div className="icon-list">
-        <a
-          className="icon"
-          href="https://www.linkedin.com/in/eric-pence-25319611b/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <IconContainer url="https://www.linkedin.com/in/eric-pence-25319611b/" poptext='Linked In'>
           <LinkedIn className='dark-icon' fontSize="large" />
-        </a>
-        <a
-          className="icon"
-          href="https://github.com/EricJoseph97"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        </IconContainer>
+        <IconContainer url="https://github.com/EricJoseph97" poptext='Github'>
           <GitHub className='dark-icon' fontSize="large" />
-        </a>
+        </IconContainer>
+        <IconContainer url="https://teamtreehouse.com/ericpence" poptext='Team Treehouse'>
+          <School className='dark-icon' fontSize="large"/>  
+        </IconContainer>
         <span className="icon" onClick={handleMail}>
           <Mail className='dark-icon' fontSize="large" />
         </span>
