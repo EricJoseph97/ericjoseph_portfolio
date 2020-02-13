@@ -29,9 +29,12 @@ export default function Header() {
         <IconContainer url="https://teamtreehouse.com/ericpence" poptext='Team Treehouse'>
           <School className='dark-icon' fontSize="large"/>  
         </IconContainer>
-        <span className="icon" onClick={handleMail}>
+        <IconContainer handleMail={handleMail} poptext="Copy Email">
           <Mail className='dark-icon' fontSize="large" />
-        </span>
+        </IconContainer>
+       
+          
+     
         <input
           id="Email"
           value="epence97@gmail.com"

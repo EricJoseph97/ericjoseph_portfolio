@@ -18,7 +18,7 @@ export default function IconContainer(props){
     
 
     return (
-        <div className='icon relative' onMouseEnter={onEnter}
+        <div className='icon relative' onClick={props.handleMail} onMouseEnter={onEnter}
         onMouseLeave={onLeave}>
             <a
             href={props.url}

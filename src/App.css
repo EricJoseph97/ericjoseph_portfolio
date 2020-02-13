@@ -60,7 +60,7 @@
   fill: var(--extra-light-text-color);
 }
 
-.realative {
+.relative {
   position: relative;
 }
 
@@ -176,4 +176,16 @@
   padding: 5px;
   background-color: var(--main-text-color);
   border-radius: 5px;
+}
+
+.popover::before {
+  content: "";
+  border: 5px solid var(--main-text-color);
+  border-color: var(--main-text-color) var(--main-text-color) transparent
+    transparent;
+  border-radius: 0px;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -5px;
+  left: 18px;
 }
