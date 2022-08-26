@@ -7,8 +7,9 @@
     "@material-ui/icons": "^4.11.3",
     "express": "^4.18.1",
     "normalize.css": "^8.0.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "nth-check": "^2.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1"
   },
   "scripts": {
